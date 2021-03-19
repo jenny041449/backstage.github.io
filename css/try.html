@@ -10,7 +10,7 @@
 
 <body>
     <div class="module">
-        <div class="module__item">b111120%</div>
+        <div class="module__item">111120%</div>
         <div class="module__item">40%</div>
         <div class="module__item">60%</div>
         <div class="module__item">80%</div>
@@ -22,9 +22,9 @@
 <script>
     function safariHacks() {
         let windowsVH = window.innerHeight / 100;
-        document.querySelector('.wrap').style.setProperty('--vh', windowsVH + 'px');
+        document.querySelector('.module').style.setProperty('--vh', windowsVH + 'px');
         window.addEventListener('resize', function() {
-            document.querySelector('.wrap').style.setProperty('--vh', windowsVH + 'px');
+            document.querySelector('.module').style.setProperty('--vh', windowsVH + 'px');
         });
     }
 
@@ -32,6 +32,8 @@
 </script>
 <style>
     body {
+        margin: 0;
+        padding: 0;
         background-color: #333;
     }
     
