@@ -900,15 +900,10 @@
 <script>
     function safariHacks() {
         let windowsVH = ((window.innerHeight - 60) / 100);
-        let windowsVH2 = ((window.innerHeight - 60-20-25) / 100);
-        let windowsVH3 = ((window.innerHeight - 60-6) / 100);
-        document.querySelector('.xs-height').style.setProperty('--vh', windowsVH + 'px');
-        console.log(windowsVH);
-        window.addEventListener('.min-height', function () {
-            document.querySelector('.module').style.setProperty('--vh', windowsVH2 + 'px');
-        });
-        window.addEventListener('.main-height', function () {
-            document.querySelector('.module').style.setProperty('--vh', windowsVH2 + 'px');
+        document.querySelector('.xs-height,min-height,main-height').style.setProperty('--vh', windowsVH + 'px');
+
+        window.addEventListener('resize', function () {
+            document.querySelector('.xs-height,min-height,main-height').style.setProperty('--vh', windowsVH + 'px');
         });
     }
 
