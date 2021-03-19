@@ -419,8 +419,7 @@ h2 {
 }
 
 .main_menu {
-    /* height: 100%; */
-    height: calc(var(--vh, 1vh) * 100 - 20px - 60px - 35px);
+    height: 100%;
     min-width: 250px;
     line-height: 2;
 }
@@ -471,6 +470,7 @@ main {
 }
 
 .menu-reorder {
+    height: calc(var(--vh, 1vh) * 100 - 20px - 60px - 34.68px - 10px)
     /* height: 100%; */
     width: 100%;
     padding: 5px;
