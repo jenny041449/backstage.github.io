@@ -9,8 +9,11 @@
 </head>
 
 <body>
+    <div style="height: 60px;">
+        adddfaea
+    </div>
     <div class="module">
-        <div class="module__item">be111120%</div>
+        <div class="module__item">111120%</div>
         <div class="module__item">40%</div>
         <div class="module__item">60%</div>
         <div class="module__item">80%</div>
@@ -21,7 +24,7 @@
 </html>
 <script>
     function safariHacks() {
-        let windowsVH = window.innerHeight / 100;
+        let windowsVH = (window.innerHeight / 100) - 60;
         document.querySelector('.module').style.setProperty('--vh', windowsVH + 'px');
         window.addEventListener('resize', function() {
             document.querySelector('.module').style.setProperty('--vh', windowsVH + 'px');
