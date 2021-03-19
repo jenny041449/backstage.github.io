@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="module">
+        <div class="module__item">20%</div>
+        <div class="module__item">40%</div>
+        <div class="module__item">60%</div>
+        <div class="module__item">80%</div>
+        <div class="module__item">100%</div>
+    </div>
+
+
+
+</body>
+
+</html>
+<script>
+    function safariHacks() {
+        let windowsVH = window.innerHeight / 100;
+        document.querySelector('.wrap').style.setProperty('--vh', windowsVH + 'px');
+        window.addEventListener('resize', function() {
+            document.querySelector('.wrap').style.setProperty('--vh', windowsVH + 'px');
+        });
+    }
+
+    // safariHacks();
+</script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        background-color: #333;
+    }
+    
+    .module {
+        height: 100vh;
+        /*給 Safari 以外的瀏覽器讀取*/
+        height: calc(var(--vh, 1vh) * 100);
+        margin: 0 auto;
+        max-width: 30%;
+    }
+    
+    .module__item {
+        align-items: center;
+        display: flex;
+        height: 20%;
+        justify-content: center;
+    }
+    
+    .module__item:nth-child(odd) {
+        background-color: #fff;
+        color: #F73859;
+    }
+    
+    .module__item:nth-child(even) {
+        background-color: #F73859;
+        color: #F1D08A;
+    }
+</style>
