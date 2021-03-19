@@ -16,36 +16,23 @@
         <div class="module__item">80%</div>
         <div class="module__item">100%</div>
     </div>
-
-
-
 </body>
 
 </html>
 <script>
-    function safariHacks() {
-        let windowsVH = window.innerHeight / 100;
-        document.querySelector('.wrap').style.setProperty('--vh', windowsVH + 'px');
-        window.addEventListener('resize', function() {
-            document.querySelector('.wrap').style.setProperty('--vh', windowsVH + 'px');
-        });
-    }
-
-    // safariHacks();
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
 </script>
 <style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    
     body {
         background-color: #333;
     }
     
     .module {
         height: 100vh;
-        /*給 Safari 以外的瀏覽器讀取*/
+        /* Use vh as a fallback for browsers that do not support Custom Properties */
         height: calc(var(--vh, 1vh) * 100);
         margin: 0 auto;
         max-width: 30%;
