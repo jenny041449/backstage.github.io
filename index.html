@@ -16,7 +16,7 @@
 
 </head>
 
-<body class="">
+<body class="cacolor">
     <nav class="py-2">
         <!-- 上方導覽 -->
         <ul class=" navbar">
@@ -31,11 +31,11 @@
                     <li class="border-g1 px-2">
                         <ul class="nav_content">
                             <li>
-                                <span class="material-icons ">
+                                <span class="material-icons xs-noshow">
                                     search
                                 </span>
                             </li>
-                            <li class=""><span class="material-icons">
+                            <li class=""><span class="material-icons xs-noshow">
                                     notifications
                                 </span>
                             </li>
@@ -159,7 +159,7 @@
                     </ul>
                     <hr style=" padding: 0; margin: 0; ">
                     <div class=" searchGroup xs-nopa-2 ">
-                        <div class=" xs-col-1 flex_center ">
+                        <div class=" xs-col-1 align-center ">
 
                             <select name=" " id=" " class=" select_menu Darty_color " style=" margin: 0 1px; ">
                                 <option value=" ">ALL</option>
@@ -172,8 +172,9 @@
                         <div class=" filters xs-col-1 flex_end ">
                             <button class=" filters_btn xs-nomx-5 xs-display-1 none-border ">Filter</button>
                             <select name=" " id=" " class=" border-radius-m1 ">
-                                <option value=" "><span class=" content "
-                                        style=" color:rgb(240, 118, 118);background-color: white; "><span>Restaurants:</span>(2
+                                <option value=" ">
+                                    <span class=" content "
+                                        style=" color:rgb(240, 118, 118);background-color: white; ">sss<span>Restaurants:</span>(2
                                         selected)</option>
                             </select>
                         </div>
@@ -184,13 +185,13 @@
                     <div class=" ">
 
 
-                        <div class=" right-end-content px-5 xs-nopx-5 ">
+                        <div class=" right-start-content ">
 
                             <div class=" check_info xs-nopa-2 ">
                                 <input type='checkbox' class=" check_btn " name=" selectAll " id=" selectAll ">
-                                <label for=" selectAll " class=" ">select&nbsp;All</label>
+                                <label for=" selectAll " class=" border-g1 pr-1 ">Select&nbsp;All</label>
                             </div>
-                            <div class=" xs-nopa-3 Darty_content ">
+                            <div class=" Darty_content ">
                                 235result
 
                             </div>
@@ -203,7 +204,7 @@
                         </div>
                         <div class=" justify-between ">
                             <!-- <hr> -->
-                            <h5 class=" bold-weight "> Sorting By Name <span class=" parmary_color ">(A-Z)</span></h5>
+                            <h5 class=" sort_desc bold-weight "> Sorting By Name <span class=" parmary_color ">(A-Z)</span></h5>
 
                             <span class=" settings material-icons ">
                                 settings
@@ -269,7 +270,7 @@
                                 </div>
                                 <!-- border -->
 
-                                <div class="item_menus xs-noshow d-flex justify-between border-g1 "
+                                <div class=" item_menus xs-noshow d-flex justify-between border-g1 "
                                     style=" padding:0 5px 0 10px; ">
                                     <ul class=" flex-column ">
                                         <ul class=" justify-between ">
@@ -312,6 +313,75 @@
 
                         </div>
                         <!-- 目錄 -->
+                        <div class=" no-show noxs-list_content_show list_content pa-2 d-flex third_bgcolor align-center mb-2 full_width ">
+
+
+                            <div class=" d-flex align-center full_width xs-wrap ">
+
+                                <!-- border -->
+                                <div class=" xs-col-2 px-2 border-g1 d-flex flex-column " style=" padding:0 2%; ">
+                                    <h5 class=" parmary_color ">Contacts</h5>
+                                    <h5><span class=" parmary_color display-a2 material-icons ">
+                                            phone
+                                        </span>
+
+                                        <span>(00)000 0000
+                                        </span>
+                                    </h5>
+                                    <h5>
+                                        <span class=" parmary_color display-a2 material-icons ">
+                                            mail_outline
+                                        </span>
+                                        <span>
+                                            email@email.com
+                                        </span>
+                                    </h5>
+                                </div>
+                                <!-- border -->
+
+                                <div class=" xs-col-2 d-flex justify-between px-2 border-g1 " style=" padding:0 2% 0 10px; ">
+                                    <ul>
+                                        <li>Average Spend:</li>
+                                        <li>Total Spend:</li>
+                                        <li>Last visit:</li>
+                                    </ul>
+                                    <ul style=" text-align: right; ">
+                                        <li class=" parmary_color " class=" parmary_color ">$32.19</li>
+                                        <li class=" parmary_color ">$345.45</li>
+                                        <li class=" parmary_color ">3 days ago</li>
+                                    </ul>
+                                </div>
+                                <!-- border -->
+
+                                <ul class=" xs-col-1 d-flex pa-2 align-center justify-center full_width ">
+                                    <li class=" ma-1 " style=" width: 5%; ">
+                                        <span class=" parmary_color display-a2 material-icons ">
+                                            keyboard_arrow_left
+                                        </span>
+                                    </li>
+                                    <div class=" d-flex overflow-item " style=" width: 90%; ">
+                                        <li class=" round_color ma-1 ">
+                                            Subscribed
+                                        </li>
+                                        <li class=" round_color ma-1 ">
+                                            High&nbsp;Spender
+                                        </li>
+                                        <li class=" round_color ma-1 ">
+                                            VIP
+                                        </li>
+                                        <li class=" round_color mark_color ma-1 ">
+                                            +2
+                                        </li>
+                                    </div>
+
+                                    <li class=" ma-1 " style=" width: 5%; ">
+                                        <span class=" parmary_color display-a2 material-icons ">
+                                            keyboard_arrow_right
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
                     </li>
 
@@ -322,7 +392,7 @@
                             <div style=" width: 30px; " class=" mx-3 xs-nomx-3 ">
                                 <input type='checkbox' name=" " class=" check_btn " id=" ">
                             </div>
-                            <div class=" align-center full_width " onclick=" expand_more(1) ">
+                            <div class=" align-center full_width " onclick=" expand_more(2) ">
 
                                 <div style=" width: 30px; " class=" mx-3 ">
                                     <img class=" sm_pict " src=" ./css/img/big_head.jpg " alt=" ">
@@ -368,7 +438,7 @@
                                 </div>
                                 <!-- border -->
 
-                                <div class="item_menus xs-noshow d-flex justify-between border-g1 "
+                                <div class=" item_menus xs-noshow d-flex justify-between border-g1 "
                                     style=" padding:0 5px 0 10px; ">
                                     <ul class=" flex-column ">
                                         <ul class=" justify-between ">
@@ -411,6 +481,75 @@
 
                         </div>
                         <!-- 目錄 -->
+                        <div class=" no-show noxs-list_content_show list_content pa-2 d-flex third_bgcolor align-center mb-2 full_width ">
+
+
+                            <div class=" d-flex align-center full_width xs-wrap ">
+
+                                <!-- border -->
+                                <div class=" xs-col-2 px-2 border-g1 d-flex flex-column " style=" padding:0 2%; ">
+                                    <h5 class=" parmary_color ">Contacts</h5>
+                                    <h5><span class=" parmary_color display-a2 material-icons ">
+                                            phone
+                                        </span>
+
+                                        <span>(00)000 0000
+                                        </span>
+                                    </h5>
+                                    <h5>
+                                        <span class=" parmary_color display-a2 material-icons ">
+                                            mail_outline
+                                        </span>
+                                        <span>
+                                            email@email.com
+                                        </span>
+                                    </h5>
+                                </div>
+                                <!-- border -->
+
+                                <div class=" xs-col-2 d-flex justify-between px-2 border-g1 " style=" padding:0 2% 0 10px; ">
+                                    <ul>
+                                        <li>Average Spend:</li>
+                                        <li>Total Spend:</li>
+                                        <li>Last visit:</li>
+                                    </ul>
+                                    <ul style=" text-align: right; ">
+                                        <li class=" parmary_color " class=" parmary_color ">$32.19</li>
+                                        <li class=" parmary_color ">$345.45</li>
+                                        <li class=" parmary_color ">3 days ago</li>
+                                    </ul>
+                                </div>
+                                <!-- border -->
+
+                                <ul class=" xs-col-1 d-flex pa-2 align-center justify-center full_width ">
+                                    <li class=" ma-1 " style=" width: 5%; ">
+                                        <span class=" parmary_color display-a2 material-icons ">
+                                            keyboard_arrow_left
+                                        </span>
+                                    </li>
+                                    <div class=" d-flex overflow-item " style=" width: 90%; ">
+                                        <li class=" round_color ma-1 ">
+                                            Subscribed
+                                        </li>
+                                        <li class=" round_color ma-1 ">
+                                            High&nbsp;Spender
+                                        </li>
+                                        <li class=" round_color ma-1 ">
+                                            VIP
+                                        </li>
+                                        <li class=" round_color mark_color ma-1 ">
+                                            +2
+                                        </li>
+                                    </div>
+
+                                    <li class=" ma-1 " style=" width: 5%; ">
+                                        <span class=" parmary_color display-a2 material-icons ">
+                                            keyboard_arrow_right
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
                     </li>
 
@@ -420,7 +559,7 @@
                             <div style=" width: 30px; " class=" mx-3 xs-nomx-3 ">
                                 <input type='checkbox' name=" " class=" check_btn " id=" ">
                             </div>
-                            <div class=" align-center full_width " onclick=" expand_more(1) ">
+                            <div class=" align-center full_width " onclick=" expand_more(3) ">
 
                                 <div style=" width: 30px; " class=" mx-3 ">
                                     <img class=" sm_pict " src=" ./css/img/big_head.jpg " alt=" ">
@@ -466,7 +605,7 @@
                                 </div>
                                 <!-- border -->
 
-                                <div class="item_menus xs-noshow d-flex justify-between border-g1 "
+                                <div class=" item_menus xs-noshow d-flex justify-between border-g1 "
                                     style=" padding:0 5px 0 10px; ">
                                     <ul class=" flex-column ">
                                         <ul class=" justify-between ">
@@ -509,7 +648,75 @@
 
                         </div>
                         <!-- 目錄 -->
+                        <div class=" no-show noxs-list_content_show list_content pa-2 d-flex third_bgcolor align-center mb-2 full_width ">
 
+
+                            <div class=" d-flex align-center full_width xs-wrap ">
+
+                                <!-- border -->
+                                <div class=" xs-col-2 px-2 border-g1 d-flex flex-column " style=" padding:0 2%; ">
+                                    <h5 class=" parmary_color ">Contacts</h5>
+                                    <h5><span class=" parmary_color display-a2 material-icons ">
+                                            phone
+                                        </span>
+
+                                        <span>(00)000 0000
+                                        </span>
+                                    </h5>
+                                    <h5>
+                                        <span class=" parmary_color display-a2 material-icons ">
+                                            mail_outline
+                                        </span>
+                                        <span>
+                                            email@email.com
+                                        </span>
+                                    </h5>
+                                </div>
+                                <!-- border -->
+
+                                <div class=" xs-col-2 d-flex justify-between px-2 border-g1 " style=" padding:0 2% 0 10px; ">
+                                    <ul>
+                                        <li>Average Spend:</li>
+                                        <li>Total Spend:</li>
+                                        <li>Last visit:</li>
+                                    </ul>
+                                    <ul style=" text-align: right; ">
+                                        <li class=" parmary_color " class=" parmary_color ">$32.19</li>
+                                        <li class=" parmary_color ">$345.45</li>
+                                        <li class=" parmary_color ">3 days ago</li>
+                                    </ul>
+                                </div>
+                                <!-- border -->
+
+                                <ul class=" xs-col-1 d-flex pa-2 align-center justify-center full_width ">
+                                    <li class=" ma-1 " style=" width: 5%; ">
+                                        <span class=" parmary_color display-a2 material-icons ">
+                                            keyboard_arrow_left
+                                        </span>
+                                    </li>
+                                    <div class=" d-flex overflow-item " style=" width: 90%; ">
+                                        <li class=" round_color ma-1 ">
+                                            Subscribed
+                                        </li>
+                                        <li class=" round_color ma-1 ">
+                                            High&nbsp;Spender
+                                        </li>
+                                        <li class=" round_color ma-1 ">
+                                            VIP
+                                        </li>
+                                        <li class=" round_color mark_color ma-1 ">
+                                            +2
+                                        </li>
+                                    </div>
+
+                                    <li class=" ma-1 " style=" width: 5%; ">
+                                        <span class=" parmary_color display-a2 material-icons ">
+                                            keyboard_arrow_right
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                     <li class=" list_content ">
 
@@ -517,7 +724,7 @@
                             <div style=" width: 30px; " class=" mx-3 xs-nomx-3 ">
                                 <input type='checkbox' name=" " class=" check_btn " id=" ">
                             </div>
-                            <div class=" align-center full_width " onclick=" expand_more(1) ">
+                            <div class=" align-center full_width " onclick=" expand_more(4) ">
 
                                 <div style=" width: 30px; " class=" mx-3 ">
                                     <img class=" sm_pict " src=" ./css/img/big_head.jpg " alt=" ">
@@ -563,7 +770,7 @@
                                 </div>
                                 <!-- border -->
 
-                                <div class="item_menus xs-noshow d-flex justify-between border-g1 "
+                                <div class=" item_menus xs-noshow d-flex justify-between border-g1 "
                                     style=" padding:0 5px 0 10px; ">
                                     <ul class=" flex-column ">
                                         <ul class=" justify-between ">
@@ -606,6 +813,75 @@
 
                         </div>
                         <!-- 目錄 -->
+                        <div class=" no-show noxs-list_content_show list_content pa-2 d-flex third_bgcolor align-center mb-2 full_width ">
+
+
+                            <div class=" d-flex align-center full_width xs-wrap ">
+
+                                <!-- border -->
+                                <div class=" xs-col-2 px-2 border-g1 d-flex flex-column " style=" padding:0 2%; ">
+                                    <h5 class=" parmary_color ">Contacts</h5>
+                                    <h5><span class=" parmary_color display-a2 material-icons ">
+                                            phone
+                                        </span>
+
+                                        <span>(00)000 0000
+                                        </span>
+                                    </h5>
+                                    <h5>
+                                        <span class=" parmary_color display-a2 material-icons ">
+                                            mail_outline
+                                        </span>
+                                        <span>
+                                            email@email.com
+                                        </span>
+                                    </h5>
+                                </div>
+                                <!-- border -->
+
+                                <div class=" xs-col-2 d-flex justify-between px-2 border-g1 " style=" padding:0 2% 0 10px; ">
+                                    <ul>
+                                        <li>Average Spend:</li>
+                                        <li>Total Spend:</li>
+                                        <li>Last visit:</li>
+                                    </ul>
+                                    <ul style=" text-align: right; ">
+                                        <li class=" parmary_color " class=" parmary_color ">$32.19</li>
+                                        <li class=" parmary_color ">$345.45</li>
+                                        <li class=" parmary_color ">3 days ago</li>
+                                    </ul>
+                                </div>
+                                <!-- border -->
+
+                                <ul class=" xs-col-1 d-flex pa-2 align-center justify-center full_width ">
+                                    <li class=" ma-1 " style=" width: 5%; ">
+                                        <span class=" parmary_color display-a2 material-icons ">
+                                            keyboard_arrow_left
+                                        </span>
+                                    </li>
+                                    <div class=" d-flex overflow-item " style=" width: 90%; ">
+                                        <li class=" round_color ma-1 ">
+                                            Subscribed
+                                        </li>
+                                        <li class=" round_color ma-1 ">
+                                            High&nbsp;Spender
+                                        </li>
+                                        <li class=" round_color ma-1 ">
+                                            VIP
+                                        </li>
+                                        <li class=" round_color mark_color ma-1 ">
+                                            +2
+                                        </li>
+                                    </div>
+
+                                    <li class=" ma-1 " style=" width: 5%; ">
+                                        <span class=" parmary_color display-a2 material-icons ">
+                                            keyboard_arrow_right
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
                     </li>
                     <li class=" list_content ">
@@ -613,7 +889,7 @@
                             <div style=" width: 30px; " class=" mx-3 xs-nomx-3 ">
                                 <input type='checkbox' name=" " class=" check_btn " id=" ">
                             </div>
-                            <div class=" align-center full_width " onclick=" expand_more(1) ">
+                            <div class=" align-center full_width " onclick=" expand_more(5) ">
 
                                 <div style=" width: 30px; " class=" mx-3 ">
                                     <img class=" sm_pict " src=" ./css/img/big_head.jpg " alt=" ">
@@ -659,7 +935,7 @@
                                 </div>
                                 <!-- border -->
 
-                                <div class="item_menus xs-noshow d-flex justify-between border-g1 "
+                                <div class=" item_menus xs-noshow d-flex justify-between border-g1 "
                                     style=" padding:0 5px 0 10px; ">
                                     <ul class=" flex-column ">
                                         <ul class=" justify-between ">
@@ -701,7 +977,75 @@
                             </div>
 
                         </div>
-                        <!-- 目錄 -->
+                        <!-- 目錄 --><div class=" no-show noxs-list_content_show list_content pa-2 d-flex third_bgcolor align-center mb-2 full_width ">
+
+
+                                <div class=" d-flex align-center full_width xs-wrap ">
+
+                                    <!-- border -->
+                                    <div class=" xs-col-2 px-2 border-g1 d-flex flex-column " style=" padding:0 2%; ">
+                                        <h5 class=" parmary_color ">Contacts</h5>
+                                        <h5><span class=" parmary_color display-a2 material-icons ">
+                                                phone
+                                            </span>
+
+                                            <span>(00)000 0000
+                                            </span>
+                                        </h5>
+                                        <h5>
+                                            <span class=" parmary_color display-a2 material-icons ">
+                                                mail_outline
+                                            </span>
+                                            <span>
+                                                email@email.com
+                                            </span>
+                                        </h5>
+                                    </div>
+                                    <!-- border -->
+
+                                    <div class=" xs-col-2 d-flex justify-between px-2 border-g1 " style=" padding:0 2% 0 10px; ">
+                                        <ul>
+                                            <li>Average Spend:</li>
+                                            <li>Total Spend:</li>
+                                            <li>Last visit:</li>
+                                        </ul>
+                                        <ul style=" text-align: right; ">
+                                            <li class=" parmary_color " class=" parmary_color ">$32.19</li>
+                                            <li class=" parmary_color ">$345.45</li>
+                                            <li class=" parmary_color ">3 days ago</li>
+                                        </ul>
+                                    </div>
+                                    <!-- border -->
+
+                                    <ul class=" xs-col-1 d-flex pa-2 align-center justify-center full_width ">
+                                        <li class=" ma-1 " style=" width: 5%; ">
+                                            <span class=" parmary_color display-a2 material-icons ">
+                                                keyboard_arrow_left
+                                            </span>
+                                        </li>
+                                        <div class=" d-flex overflow-item " style=" width: 90%; ">
+                                            <li class=" round_color ma-1 ">
+                                                Subscribed
+                                            </li>
+                                            <li class=" round_color ma-1 ">
+                                                High&nbsp;Spender
+                                            </li>
+                                            <li class=" round_color ma-1 ">
+                                                VIP
+                                            </li>
+                                            <li class=" round_color mark_color ma-1 ">
+                                                +2
+                                            </li>
+                                        </div>
+
+                                        <li class=" ma-1 " style=" width: 5%; ">
+                                            <span class=" parmary_color display-a2 material-icons ">
+                                                keyboard_arrow_right
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
 
                     </li>
 

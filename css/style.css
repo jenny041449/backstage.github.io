@@ -16,6 +16,10 @@ label {
     font-weight: bold;
 }
 
+.cacolor {
+    background-color: #f0f3fb;
+}
+
 
 /* 
 
@@ -52,7 +56,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-content: center;
-    height: 60px;
+    height: 50px;
     margin: auto;
 }
 
@@ -89,7 +93,8 @@ nav {
     color: #919191;
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 0 5px 0 0;
+    border-right: 1px solid grey;
 }
 
 .box-shadow {
@@ -117,7 +122,7 @@ option {
 .justify-between {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 10px;
 }
 
 .item_menus .justify-between {
@@ -240,6 +245,10 @@ h2 {
     padding: 5px;
 }
 
+.pr-1 {
+    padding-right: 5px;
+}
+
 .mx-1 {
     margin: 0 5px !important;
 }
@@ -355,8 +364,8 @@ h2 {
 /* 圓形 */
 
 .round_color {
-    margin: 5px;
-    padding: 8px;
+    margin: 3px;
+    padding: 1px 5px;
     color: white;
     background-color: #6d4ade;
     border-radius: 10px;
@@ -420,7 +429,7 @@ h2 {
 
 .main_menu {
     height: 100%;
-    min-width: 250px;
+    min-width: 200px;
     line-height: 2;
 }
 
@@ -470,12 +479,13 @@ main {
 }
 
 .menu-reorder {
-    height: calc(var(--vh, 1vh) * 100 - 20px - 60px - 34.68px - 10px);
+    height: calc(var(--vh, 1vh) * 100 - 20px - 50px - 34.68px - 10px);
     /* height: 100%; */
-    width: 100%;
+    /* width: 100%; */
     padding: 5px;
     margin: 5px;
     display: flex;
+    background-color: white;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 10px;
@@ -560,16 +570,16 @@ aside .material-icons {
     color: white;
     cursor: pointer;
     background-color: #4260ff;
-    padding: 5px;
+    padding: 0 25px;
     margin: 0 20px;
     border-radius: 8px;
     box-shadow: 2px 3px 4px rgba(102, 102, 102, 0.76);
 }
 
-.right-end-content {
+.right-start-content {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: start;
 }
 
 .check_info {
@@ -581,7 +591,7 @@ aside .material-icons {
 .list_content {
     padding: 5px;
     display: flex;
-    background-color: rgb(235, 251, 255);
+    background-color: rgb(253, 245, 255);
     align-items: center;
     margin-bottom: 5px;
     width: 100%;
@@ -624,16 +634,24 @@ aside .material-icons {
 }
 
 .main-height {
-    background-color: #f0f3fb;
-    height: calc(var(--vh, 1vh) * 100 - 20px - 60px);
-    /* height: calc(100vh - 60px - 20px - 25px);
+    height: 100%;
+    background-color: #f8f8f8;
+    height: calc(var(--vh, 1vh) * 100 - 20px - 50px);
+    /* height: calc(100vh - 50px - 20px - 25px);
     height: calc((var(--vh, 1vh)-(60+20+25)/100) * 100); */
     /* min-height: 400px; */
 }
 
 .lists-contnet {
-    height: 200px;
-    /* height: calc(var(--vh, 1vh) * 100 - 20px - 60px - 220px); */
+    height: calc(var(--vh, 1vh) * 100 - 20px - 50px - 34.68px - 10px - 220px);
+    /* height: 200px; */
+    /* height: calc(var(--vh, 1vh) * 100 - 20px - 50px - 220px); */
+}
+
+.sort_desc {
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px grey solid;
 }
 
 @media(max-width:1100px) {
@@ -680,7 +698,7 @@ aside .material-icons {
         border: none;
     }
     /* .main_menu {
-        min-width: calc(100vw - 60px - 10px);
+        min-width: calc(100vw - 50px - 10px);
     } */
     .xs-nomx-3,
     .xs-nomx-5 {
@@ -711,7 +729,7 @@ aside .material-icons {
         flex-wrap: nowrap;
     }
     .xs-height {
-        height: calc( 100vh - 60px - 35px);
+        height: calc( 100vh - 50px - 35px);
         height: calc((var(--vh, 1vh)-(60+35)/100) * 100);
     }
     navbar .material-icons,
@@ -738,11 +756,15 @@ aside .material-icons {
     }
     .lists-contnet {
         /* height: 200px; */
-        /* height: calc(var(--vh, 1vh) * 100 - 20px - 60px - 35px - 16em);
+        /* height: calc(var(--vh, 1vh) * 100 - 20px - 50px - 35px - 16em);
          */
-        height: calc(var(--vh, 1vh) * 100 - 20px - 60px - 220px - 34.68px);
+        height: calc(var(--vh, 1vh) * 100 - 20px - 50px - 34.68px - 10px - 220px);
     }
     .main-height {
         /* height: 100%; */
+    }
+    .material-icons,
+    .group-material-icons {
+        font-size: 18px;
     }
 }
