@@ -936,7 +936,8 @@ aside .material-icons {
     .group-material-icons {
         font-size: 18px;
     }
-    .menu-reorder {
+    .menu-reorder,
+    .lists-contnet-menu {
         width: 100%;
     }
 }
